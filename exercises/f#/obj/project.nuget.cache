@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "35BdzhgsNgauZoxC+rCJOs2Ja2WwdqRV7g9VtWAvBR1KLJ+ug6AHpR1Qd/7DpNyIX/sTWl5UggsKmhSeQay1sQ==",
+  "success": true,
+  "projectFilePath": "/Users/oliver/Desktop/School/PCL/code/exercises/exercises.fsproj",
+  "expectedPackageFiles": [
+    "/Users/oliver/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
