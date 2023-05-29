@@ -88,6 +88,7 @@ let result7 = rerunTail "kokot" 3
 // 4
 
 // sequences
+// loops
 
 let f1 i j k =
     seq {

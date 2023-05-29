@@ -377,6 +377,8 @@ print(list(print_even_numbers([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])))
 
 # sort
 # lambda
+# tuple
+# array
 
 gtg_sales = [
     ('Coffee', 2018, 525.05),
