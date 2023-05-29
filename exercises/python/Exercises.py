@@ -1,8 +1,11 @@
 # 8.1a
+# loop
+
 for count in range(10):
     print('Oliver Sperlik 304131')
 
 # 8.1b
+# input
 
 wish = input("Enter your wish: ")
 repetitions = input("Enter amount of repetitions: ")
@@ -11,6 +14,8 @@ for count in range (int(repetitions)):
     print(wish)
 
 # 8.2
+# imperative
+# sum
 
 numList = [1, 2, 3, 4, 5]
 sumImperative = 0
@@ -19,6 +24,9 @@ for num in numList:
 print (sumImperative)
 
 # 8.3
+
+# imperative
+# input
 
 userInput = 0
 while (userInput != 123):
@@ -29,6 +37,10 @@ while (userInput != 123):
 print("Bye for now")
 
 # 8.4
+
+# imperative
+# group list
+
 def group_list(list, glength):
     result = []
     for index, _ in enumerate(list):
@@ -38,6 +50,8 @@ def group_list(list, glength):
 print(group_list([1, 2, 3, 4, 5, 6], 2))
 
 # 8.5
+# dict
+
 dict = {
     "Bob the Builder": "IoT",
     "Dora the Explorer": "Interactive Media",
@@ -50,10 +64,18 @@ print(dict["Dora the Explorer"])
 print(dict)
 
 # 8.6
-
+# i am pretty sure you cant solve this with just what is said in the pdf
 
 
 # 9.1
+# oop
+# inheritance
+# property
+# get set
+# polymorphism
+# class
+# object
+
 class MyRecipe:
 
     @property
@@ -307,6 +329,8 @@ coffee = Coffee("Latte", 1.2, 2, 20)
 print(coffee.get_price())
 
 # 10.1a
+# functional
+# sum list
 num_list = [1, 2, 3, 4, 5]
 
 def fun_list_sum(list, iteration = 0, sum = 0):
@@ -317,6 +341,8 @@ def fun_list_sum(list, iteration = 0, sum = 0):
 print(fun_list_sum(num_list))
 
 # 10.1b
+# lambda
+# ternary
 num_list = [1, 2, 3, 4, 5]
 
 fun_list_sum = lambda list, iteration = 0, sum = 0 : sum if (iteration == len(num_list)) else fun_list_sum(list, iteration + 1, sum + num_list[iteration])
@@ -324,21 +350,33 @@ fun_list_sum = lambda list, iteration = 0, sum = 0 : sum if (iteration == len(nu
 print(fun_list_sum(num_list))
 
 # 10.2a
+# recursion
+# factorial
+# lambda
 
 recursive_factorial = lambda num : 1 if (num == 0) else num * recursive_factorial(num - 1)
 print(recursive_factorial(5))
 
 # 10.2b
-
+# square sum
+# recursion
+# lambda
 square_sum = lambda int1, int2 : ((int1*int1) + (int2*int2))
 print(square_sum(3, 4))
 
 # 10.3
 
+# print even numbers
+# lambda
+# filter
+
 print_even_numbers = lambda list : filter(lambda x: x % 2 == 0, list)
 print(list(print_even_numbers([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])))
 
 # 10.4
+
+# sort
+# lambda
 
 gtg_sales = [
     ('Coffee', 2018, 525.05),

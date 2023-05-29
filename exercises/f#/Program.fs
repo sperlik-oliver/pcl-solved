@@ -14,6 +14,8 @@ let a = vowelToUpper "a"
 
 // 2.1b
 
+// convert vowels to uppercase own implementation
+
 let rec convertVowelsToUpper (str: string) : string =
     match str with
     | "" -> ""
@@ -27,6 +29,8 @@ let rec convertVowelsToUpper (str: string) : string =
 let picovina = convertVowelsToUpper "picovina"
 
 // 2.2a
+
+// list length own implementaion
 
 let rec pmLength list =
     match list with
@@ -46,6 +50,8 @@ let result2 = pclSum [1;2;3;4]
 
 // 2.3
 
+// take specified part from list
+
 let takeSome n ls = 
     match ls with
     | [] -> []
@@ -54,6 +60,9 @@ let takeSome n ls =
 let result3 = takeSome 3 [1;2;3;4;5]
 
 // 2.4a
+
+// fold 
+// own implementation
 
 let rec pclFold func acc lst =
     match lst with
@@ -68,6 +77,8 @@ let result4 = pclSumWithFold [1;2;3;4;5]
 
 // 2.5a
 
+// fold back 
+// own implementation
 
 let rec pclFoldBack func acc lst =
     match lst with
@@ -88,6 +99,8 @@ let result6 = pclFoldBack (-) 0 [1;2;3]
 
 // 2.6
 
+// increment int list
+
 let rec pclIncList lst =
     match lst with
     | [] -> []
@@ -96,6 +109,9 @@ let rec pclIncList lst =
 let result7 = pclIncList [1;2;3;4]
 
 // 2.7a
+
+// map
+// own implementation
 
 let rec pclMap fn lst =
     match lst with
@@ -109,6 +125,9 @@ let pclIncListWithMap lst = pclMap (fun x -> x + 1) lst
 let result8 = pclIncListWithMap [1;2;3;4;5]
 
 // 2.8a
+
+// filter
+// own implementation
 
 let rec pclFilter predicate lst =
     match lst with
@@ -131,6 +150,11 @@ let result9 = pclFilter pclEven [1;2;3;4;5;6;7;8;9;10]
 
 // 3.1
 
+// count vowels
+// fold
+// tuples
+// seq.tolist
+
 let countVowel vowelCount vowel = 
     let (a, e, i, o, u) = vowelCount
     match vowel with
@@ -146,6 +170,10 @@ let countNumOfVowels str = List.fold countVowel (0, 0, 0, 0, 0) (Seq.toList str)
 let result10 = countNumOfVowels "Higher-order functions can take and return functions of any order"
 
 // 3.2
+
+// is prime
+// primes up to
+// primesupto
 
 let isPrime n =
     let rec isDivisibleBy k d =
@@ -164,6 +192,9 @@ let primesUpTo n =
 let result11 = primesUpTo 10
 
 // 3.3
+
+// recursion 
+// fibonacci
 
 let rec pclFib n =
     match n with
@@ -189,6 +220,11 @@ let pclQuad x = doubleNum(doubleNum x)
 let pclFourth x = sqrNum(sqrNum x)
 
 // 4.1 & 5.1
+
+// shape area
+// union
+// type
+// object
 
 type Shape = | Rectangle | Triangle
 
@@ -216,16 +252,22 @@ let trianglePerimeter = pclPerimeter triangle
 
 // 5.2
 
+// tail recursion 
+// fibonacci
+
 let fibonacci n =
-    let rec fibonacciTail n a b =
+    let rec fibonacciTail n acc b =
         match n with
-        | 0 -> a
-        | _ -> fibonacciTail (n - 1) b (a + b)
-    
+        | 0 -> acc
+        | _ -> fibonacciTail (n - 1) b (acc + b)
     fibonacciTail n 0 1
+
 let result13 = fibonacci 8
 
 // 5.3
+
+// factorial 
+// continuation
 
 let rec factorial n cont =
     match n with
@@ -237,6 +279,10 @@ let printFactorial result = printfn "Factorial %d" result
 factorial 5 printFactorial
 
 // 6a
+
+// integer tree
+// discriminated unions
+// tuple types
 
 type IntegerTree =
     | Leaf of int
@@ -255,6 +301,8 @@ let result16 = sumIntegerTree tree2  // Result: 15
 
 // 6b
 
+// word letter count
+
 type WordLetterCount =
     { WordCount : int
       LetterCount : int }
@@ -265,6 +313,10 @@ let countWordnLetter (str: string) =
     { WordCount = wordCount.Length; LetterCount = letterCount }
 
 // 7
+
+// leap year
+// days to end year
+// if else
 
 let isLeapYear year =
     year % 4 = 0 && (year % 100 <> 0 || year % 400 = 0)

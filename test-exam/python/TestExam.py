@@ -1,4 +1,8 @@
 # 7a
+
+# sum list
+# imperative
+
 num_list = [1, 2, 3, 4, 5]
 
 def sum_list(list):
@@ -9,6 +13,10 @@ def sum_list(list):
 print(sum_list(num_list))
 
 # 7b
+
+# input
+# imperative
+
 user_input = 0
 print("Welcome to even numbers printer. Input 123 to exit")
 while (user_input != 123):
@@ -18,6 +26,12 @@ while (user_input != 123):
 print("Bye for now!")
 
 # 8a
+
+# map
+# lambda
+# add 10
+# add ten
+
 data = [1, 2, 3, 4, 5]
 
 add_ten = lambda list_to_add: list(map(lambda x: x + 10, list_to_add))
@@ -26,6 +40,9 @@ print(add_ten(data))
 
 # 8b
 
+# find even
+# filter
+
 data = [1, 2, 3, 4, 5]
 
 find_even = lambda list_to_filter: list(filter(lambda x: x % 2 == 0, list_to_filter))
@@ -33,6 +50,10 @@ find_even = lambda list_to_filter: list(filter(lambda x: x % 2 == 0, list_to_fil
 print(find_even(data))
 
 # 9a
+
+# group list
+# imperative
+# enumerate
 
 def group_list(list, glength):
     result = []
@@ -45,6 +66,10 @@ print(group_list([1, 2, 3, 4, 5, 6], 2))
 
 # 9b
 
+# filter by string
+# characters
+# imperative
+
 dk_cities = ['Copenhagen', 'Aarhus', 'Aalborg', 'Horsens', 'Odense']
 
 def filter_cities(cities):
@@ -56,6 +81,13 @@ def filter_cities(cities):
 print(filter_cities(dk_cities))
 
 # 10a
+
+# oop
+# class
+# property
+# get set
+# inheritance
+# polymorphism
 
 from datetime import datetime
 
